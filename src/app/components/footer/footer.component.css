@@ -1,0 +1,21 @@
+/* Footer */
+footer {
+  background-color: var(--secondary-color);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.social-media {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+}
+
+.social-media li a img {
+  width: 24px;
+  height: 24px;
+}
