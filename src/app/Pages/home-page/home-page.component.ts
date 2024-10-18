@@ -6,11 +6,10 @@ import { CardsComponent } from '../../components/cards/cards.component';
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [HeaderComponent,FooterComponent,CardsComponent],
+  imports: [HeaderComponent, FooterComponent, CardsComponent],
   templateUrl: './home-page.component.html',
-  styleUrl: './home-page.component.css'
+  styleUrls: ['./home-page.component.css']  // Corrección aquí
 })
 export class HomePageComponent {
 
 }
-

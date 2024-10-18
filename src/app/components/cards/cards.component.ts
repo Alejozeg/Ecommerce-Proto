@@ -1,12 +1,13 @@
+
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-cards',
   standalone: true,
-  imports: [],
   templateUrl: './cards.component.html',
-  styleUrl: './cards.component.css'
+  styleUrls: ['./cards.component.css']  // Corrección aquí
 })
 export class CardsComponent {
-
+  // Aquí se puede agregar la lógica relacionada con los productos en el futuro
 }
