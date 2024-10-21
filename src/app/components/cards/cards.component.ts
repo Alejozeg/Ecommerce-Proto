@@ -9,5 +9,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./cards.component.css']  // Corrección aquí
 })
 export class CardsComponent {
-  // Aquí se puede agregar la lógica relacionada con los productos en el futuro
+  img ='https://picsum.photos/640/640?r='+ Math.random()
+
 }
