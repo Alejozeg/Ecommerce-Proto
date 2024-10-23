@@ -9,14 +9,15 @@ import { CommonModule } from '@angular/common';  // Importa CommonModule para us
   styleUrls: ['./galeria-tienda.component.css'],
 })
 export class GaleriaTiendaComponent {
+  
   // // productos tarjetas
-
   // producto1
 
   productos = [
     {
       name: 'camisa de verano',
       size: 'M',
+      genero: 'Hombre',
       stock: '100 Uunidades',
       price: '200000',
       category: 'sacos',
@@ -30,6 +31,7 @@ export class GaleriaTiendaComponent {
     {
       name: 'camisa de Nieve Suave',
       size: 'S',
+      genero: 'Hombre',
       stock: '200 unidades',
       price: '300000',
       category: 'camisas',
@@ -43,6 +45,7 @@ export class GaleriaTiendaComponent {
     {
       name: 'camisa Brisa Marina',
       size: 'L',
+      genero: 'Hombre',
       stock: '200 unidades',
       price: '300000',
       category: 'camisa',
@@ -55,6 +58,7 @@ export class GaleriaTiendaComponent {
     {
       name: 'camisa Refugio Invernal',
       size: 'L',
+      Genero: 'Hombre',
       stock: '200 unidades',
       price: '300000',
       category: 'camisa',
@@ -69,6 +73,7 @@ export class GaleriaTiendaComponent {
     {
       name: 'camisa Rayos de Sol',
       size: 'L',
+      genero: 'Hombre',
       stock: '200 unidades',
       price: '300000',
       category: 'camisa',
@@ -81,8 +86,9 @@ export class GaleriaTiendaComponent {
     // producto6
 
     {
-      name: 'camisa Olas y Palmeras',
+      name: 'camisa Olas',
       size: 'L',
+      genero: 'Hombre',
       stock: '200 unidades',
       price: '300000',
       category: 'camisa',
@@ -94,8 +100,9 @@ export class GaleriaTiendaComponent {
     // producto7
 
     {
-      name: 'camisa Olas y Palmeras',
+      name: 'camisa  Palmeras',
       size: 'L',
+      genero: 'Mujer',
       stock: '200 unidades',
       price: '300000',
       category: 'camisa',
@@ -107,8 +114,9 @@ export class GaleriaTiendaComponent {
     // producto8
 
     {
-      name: 'camisa Olas y Palmeras',
+      name: 'camisa nieve astral',
       size: 'L',
+      genero: 'Mujer',
       stock: '200 unidades',
       price: '300000',
       category: 'camisa',
@@ -120,8 +128,9 @@ export class GaleriaTiendaComponent {
     // producto9
 
     {
-      name: 'camisa Olas y Palmeras',
+      name: 'camisa verano fuego',
       size: 'L',
+      genero: 'Mujer',
       stock: '200 unidades',
       price: '300000',
       category: 'camisa',
@@ -134,8 +143,9 @@ export class GaleriaTiendaComponent {
     // producto10
 
     {
-      name: 'camisa Olas y Palmeras',
+      name: 'camisa solticio verano',
       size: 'L',
+      genero: 'Mujer',
       stock: '200 unidades',
       price: '300000',
       category: 'camisa',
@@ -147,8 +157,9 @@ export class GaleriaTiendaComponent {
     // producto11
 
     {
-      name: 'camisa Olas y Palmeras',
+      name: 'camisa primavera flores',
       size: 'L',
+      genero: 'Mujer',
       stock: '200 unidades',
       price: '300000',
       category: 'camisa',
@@ -160,8 +171,9 @@ export class GaleriaTiendaComponent {
     // producto12
 
     {
-      name: 'camisa Olas y Palmeras',
+      name: 'camisa verano frio',
       size: 'L',
+      genero: 'Mujer',
       stock: '200 unidades',
       price: '300000',
       category: 'camisa',
@@ -170,5 +182,19 @@ export class GaleriaTiendaComponent {
       picture:
         'https://www.biowebcolsacor.online/wp-content/uploads/2024/10/Rectangle-4-10.png',
     },
+    
   ];
+  ProductosPorMostrar:any []= [] 
+  ngOnInit(){
+    this.ProductosPorMostrar=this.productos
+  }
+
+  filtrarPorCategoria (category:string){ 
+ 
+    const filtrado = this.productos.filter(producto =>producto.genero === category)
+this.ProductosPorMostrar = filtrado
+
+    //  console.log(filtrado)
+
+  }
 }

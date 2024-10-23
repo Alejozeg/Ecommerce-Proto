@@ -16,13 +16,13 @@
 </div>
 
 <div class="opcionescategorias">
-  <button class="category-btn">Hombre</button>
-  <button class="category-btn">Mujer</button>
+  <button class="category-btn" (click)="filtrarPorCategoria('Hombre')">Hombre</button>
+  <button class="category-btn" (click)="filtrarPorCategoria('Mujer')">Mujer</button>
 </div>
 
 <!-- Galería de productos -->
 <section class="tarjetas-container">
-  <div *ngFor="let producto of productos" class="tarjetaindividual">
+  <div *ngFor ="let producto of ProductosPorMostrar" class="tarjetaindividual">
     <img [src]="producto.picture" alt="Imagen del producto" />
     <div class="Textoproducto1">
       <h4 class="name-producto">{{ producto.name }}</h4>
