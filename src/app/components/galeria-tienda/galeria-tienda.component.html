@@ -1,0 +1,31 @@
+<!-- =============== barra de bsqueda ====================0 -->
+<div class="barrabusquedacontenedor">
+  <input
+    type="text"
+    class="barrabusqueda"
+    placeholder="Encuestra tu prenda Busca Aquí"
+  />
+</div>
+
+<div class="opcionescategorias">
+  <button>Hombre</button>
+  <button>Mujer</button>
+</div>
+<!-- =============== barra de bsqueda ====================0 -->
+
+<!-- ==================== Contenedor para tarjetas  ====================-->
+
+<section class="tarjetas-container">
+  @for(producto of productos;track producto.name){
+ <!-- tarjeta1 -->
+ <div class="tarjetaindividual">
+  <img     [src]="producto.picture"    alt=""  />
+  <div class="Textoproducto1">
+    <h4 class="name-producto"> {{ producto.name}} <i class="bi bi-heart"></i></h4>
+    <h4 class="price-producto">{{ producto.price}} COP</h4>
+
+  </div>
+</div>
+  }
+ 
+</section>
