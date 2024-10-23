@@ -21,16 +21,16 @@
 </div>
 
 <!-- Galería de productos -->
-<section class="tarjetas-container">
-  <div *ngFor="let producto of productos" class="tarjetaindividual">
-    <img [src]="producto.picture" alt="Imagen del producto" />
+<!-- <section class="tarjetas-container">
+  <div *ngFor="let producto of productos()" class="tarjetaindividual">
+    <img [src]="producto?.picture" alt="{{ producto.name }}" />
     <div class="Textoproducto1">
       <h4 class="name-producto">{{ producto.name }}</h4>
       <p class="price-producto">{{ producto.price }} COP</p>
       <button class="fav-btn">♡</button>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- Paginación -->
 <div class="pagination">
