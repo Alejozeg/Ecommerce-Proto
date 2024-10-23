@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';  // Importa CommonModule para usar *ngFor
 
 @Component({
   selector: 'app-galeria-tienda',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],  // Asegúrate de importar CommonModule
   templateUrl: './galeria-tienda.component.html',
-  styleUrl: './galeria-tienda.component.css',
+  styleUrls: ['./galeria-tienda.component.css'],
 })
 export class GaleriaTiendaComponent {
   // // productos tarjetas

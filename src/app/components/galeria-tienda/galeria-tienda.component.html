@@ -1,31 +1,70 @@
-<!-- =============== barra de bsqueda ====================0 -->
+<!-- Barra superior -->
+<div class="navbar">
+  <div class="navbar-container">
+    <button class="back-btn">&#x25C0;</button>
+    <h1 class="logo">Neoclothes</h1>
+    <div class="navbar-right">
+      <button class="account-btn">&#128100; Mi cuenta</button>
+      <button class="cart-btn">&#128722;</button>
+    </div>
+  </div>
+</div>
+
+<!-- Barra de búsqueda -->
 <div class="barrabusquedacontenedor">
-  <input
-    type="text"
-    class="barrabusqueda"
-    placeholder="Encuestra tu prenda Busca Aquí"
-  />
+  <input type="text" class="barrabusqueda" placeholder="Encuentra tu prenda Busca Aquí" />
 </div>
 
 <div class="opcionescategorias">
-  <button>Hombre</button>
-  <button>Mujer</button>
+  <button class="category-btn">Hombre</button>
+  <button class="category-btn">Mujer</button>
 </div>
-<!-- =============== barra de bsqueda ====================0 -->
 
-<!-- ==================== Contenedor para tarjetas  ====================-->
-
+<!-- Galería de productos -->
 <section class="tarjetas-container">
-  @for(producto of productos;track producto.name){
- <!-- tarjeta1 -->
- <div class="tarjetaindividual">
-  <img     [src]="producto.picture"    alt=""  />
-  <div class="Textoproducto1">
-    <h4 class="name-producto"> {{ producto.name}} <i class="bi bi-heart"></i></h4>
-    <h4 class="price-producto">{{ producto.price}} COP</h4>
-
+  <div *ngFor="let producto of productos" class="tarjetaindividual">
+    <img [src]="producto.picture" alt="Imagen del producto" />
+    <div class="Textoproducto1">
+      <h4 class="name-producto">{{ producto.name }}</h4>
+      <p class="price-producto">{{ producto.price }} COP</p>
+      <button class="fav-btn">♡</button>
+    </div>
   </div>
-</div>
-  }
- 
 </section>
+
+<!-- Paginación -->
+<div class="pagination">
+  <button class="pagination-btn">Previous</button>
+  <button class="pagination-btn active">1</button>
+  <button class="pagination-btn">2</button>
+  <button class="pagination-btn">3</button>
+  <span>...</span>
+  <button class="pagination-btn">Next</button>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h4>Ayuda</h4>
+      <ul>
+        <li><a href="#">Preguntas frecuentes</a></li>
+        <li><a href="#">Estado de mi pedido</a></li>
+        <li><a href="#">Cómo devolver</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="#">Preguntas frecuentes</a></li>
+        <li><a href="#">Estado de mi pedido</a></li>
+        <li><a href="#">Cómo devolver</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Nuestra app</h4>
+      <img src="https://via.placeholder.com/100x40" alt="Google Play">
+      <img src="https://via.placeholder.com/100x40" alt="App Store">
+    </div>
+  </div>
+</footer>
