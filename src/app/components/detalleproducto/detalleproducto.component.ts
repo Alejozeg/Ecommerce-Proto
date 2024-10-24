@@ -12,11 +12,11 @@ import { Product } from '../../models/product.model';  // Ajusta la ruta de tu m
 export class DetalleproductoComponent {
   @Input() producto!: Product;
   // Método para añadir el producto al carrito
-  addToCart(product: Product) {
-    // Lógica para añadir el producto al carrito
-    console.log('Añadido al carrito:', product);
-  }
+addToCart(product: Product) {
 
+  localStorage.setItem("hola", "maicol");
+
+}
   // Método para cerrar la vista de detalle del producto
   cerrar() {
     // Lógica para cerrar la vista del producto

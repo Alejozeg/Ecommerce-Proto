@@ -15,6 +15,7 @@ export class GaleriaTiendaComponent {
   // Signal para almacenar los productos
   productos = signal<Product[]>([]);
   ProductosPorMostrar = signal<Product[]>([]);  // Para los productos filtrados
+  cartsProducts: any =[]
 
   private productService = inject(ProductService);  // Inyectar el servicio de productos
 
@@ -39,6 +40,10 @@ export class GaleriaTiendaComponent {
   // Método para añadir productos al carrito
   addToCart(producto: Product) {
     console.log('Producto añadido al carrito:', producto);
-    // Aquí puedes implementar la lógica de añadir al carrito
+    this.cartsProducts.push(producto)
+    localStorage.setItem("producto",JSON.stringify(this.cartsProducts))
+    const storedCart = localStorage.getItem("producto");
+    const objectCart = storedCart ? JSON.parse(storedCart) : [];
+    console.log(objectCart, "object");
   }
 }
