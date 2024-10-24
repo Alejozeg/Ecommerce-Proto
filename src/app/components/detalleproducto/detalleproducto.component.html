@@ -1,38 +1,43 @@
 <div class="wrapper">
   <section class="contenedorproductos">
-    <!-- caja derecha -->
     <div class="imagenproducto">
       <div class="galeriaproductodestacada">
-        <img src="https://www.biowebcolsacor.online/wp-content/uploads/2024/10/Rectangle-4-6.png" alt="" />
-        <img src="https://www.biowebcolsacor.online/wp-content/uploads/2024/10/Rectangle-4-6.png" alt="" />
-        <img src="https://www.biowebcolsacor.online/wp-content/uploads/2024/10/Rectangle-4-6.png" alt="" />
-        <img src="https://www.biowebcolsacor.online/wp-content/uploads/2024/10/Rectangle-4-6.png" alt="" />
+        <!-- Galería de imágenes del producto -->
+        <img *ngFor="let image of producto.imagenes" [src]="image" alt="Imagen del producto" />
       </div>
+
       <div class="imagendestacadaproducto">
-        <img src="https://www.biowebcolsacor.online/wp-content/uploads/2024/10/Rectangle-4-7.png" alt="" />
-        <h3>nombre producto</h3>
-        <h3>p89.900</h3>
+        <!-- Imagen destacada del producto -->
+        <img [src]="producto.imagenDestacada" alt="Imagen destacada" />
+        <!-- Nombre y precio del producto -->
+        <h3>{{ producto.name }}</h3>
+        <h3>{{ producto.price | currency }}</h3>
       </div>
     </div>
-    <!-- caja izquierda -->
+
     <div class="descripcionproducto">
       <div>
-        <h3>titulo</h3>
-        <p>loremipsum</p>
+        <!-- Título y descripción del producto -->
+        <h3>{{ producto.titulo }}</h3>
+        <p>{{ producto.descripcion }}</p>
+
+        <!-- Select de opciones del producto (por ejemplo, tamaños, colores) -->
         <select name="option" id="">
-          <option value="">Opcion1</option>
-          <option value="">Opcion2</option>
+          <option *ngFor="let opcion of producto.opciones" [value]="opcion">{{ opcion }}</option>
         </select>
+
+        <!-- Imágenes recomendadas o relacionadas -->
         <div>
-          <img src="https://www.biowebcolsacor.online/wp-content/uploads/2024/10/image-25.png" alt="" />
-          <img src="recomendado2" alt="" />
-          <img src="recomendado3" alt="" />
+          <img *ngFor="let recomendado of producto.recomendados" [src]="recomendado" alt="Producto recomendado" />
         </div>
 
-        <h3>89.000</h3>
-        <button>AÑADIR AL CARRITO</button>
+        <!-- Precio y botón de añadir al carrito -->
+        <h3>{{ producto.price | currency }}</h3>
+        <button (click)="addToCart(producto)">AÑADIR AL CARRITO</button>
       </div>
     </div>
-    <button class="cerrar">X</button>
+
+    <!-- Botón de cerrar -->
+    <button class="cerrar" (click)="cerrar()">X</button>
   </section>
 </div>

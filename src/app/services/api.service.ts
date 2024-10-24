@@ -1,19 +1,18 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Product } from '../models/product.model';  // Asegúrate de que la ruta del modelo es correcta
 
 @Injectable({
   providedIn: 'root'
 })
-export class ApiService {
-  private apiUrl = 'http://localhost:3000/api';  // Reemplaza por la URL de tu API
+export class ProductService {
+  private http = inject(HttpClient);
 
-  constructor(private http: HttpClient) {}
+  constructor() { }
 
-  // Obtener productos desde la API
-  getProducts(): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}/products`);
+  // Método para obtener la lista de productos desde la API
+  list(): Observable<Product[]> {
+    return this.http.get<Product[]>("http://localhost:3000/api/products");  // Ajusta la URL de la API
   }
-
-  // Otros métodos según las necesidades de la API...
 }

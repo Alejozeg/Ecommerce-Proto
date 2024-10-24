@@ -11,7 +11,4 @@ import { FooterComponent } from '../../components/footer/footer.component';
   styleUrl: './tienda.component.css'
 })
 export class TiendaComponent {
-  constructor() {
-    console.log('TiendaComponent cargado');  // Verifica si aparece este mensaje en la consola
-  }
 }
