@@ -28,3 +28,18 @@
   border-radius: 4px;
   cursor: pointer;
 }
+
+.eliminar {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.eliminar:hover {
+  background-color: darkred;
+}
