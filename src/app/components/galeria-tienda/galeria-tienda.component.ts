@@ -44,7 +44,7 @@ export class GaleriaTiendaComponent {
   }
 
   DetailProduct(id:any){
-    this.router.navigate(["Producto/" + id])
+    this.router.navigate(["product/" + id])
   }
 
   // Método para añadir productos al carrito

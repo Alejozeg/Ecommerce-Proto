@@ -4,6 +4,7 @@ import { TiendaComponent } from './pages/tienda/tienda.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { LoginComponent } from './pages/login/login.component';
+import { Producto5Component } from './Productos/producto5/producto5.component';
 
 export const routes: Routes = [
   { path: '', component: HomePageComponent },  // Ruta principal
@@ -27,5 +28,10 @@ export const routes: Routes = [
     path: "login",
     component: LoginComponent,
     title: "login"
+  },
+  {
+    path: "product/:id",
+    component: Producto5Component,
+    title: "product/:id"
   }
 ];

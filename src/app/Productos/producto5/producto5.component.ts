@@ -16,7 +16,7 @@ export class Producto5Component {
     _id:'',
     name: '',
   price: 0,
-  description: '',
+  descripcion: '',
   images:[],  // Aquí cambias "imagenes" por "images"
   category: '',
   size: '',
@@ -30,7 +30,7 @@ export class Producto5Component {
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       this.id = params.get('id'); // Extraer el 'id' de la URL
-      console.log(this.id); 
+      console.log(this.id);
     });
     this.getProduct()
   }
