@@ -41,7 +41,7 @@
 .producto-card button {
   margin-top: 15px;
   padding: 10px 15px;
-  background-color: #007bff;
+  background-color: #074A59;
   border: none;
   color: white;
   border-radius: 4px;
@@ -49,7 +49,7 @@
 }
 
 .producto-card button:hover {
-  background-color: #0056b3;
+  background-color: #FEB400;
 }
 
 /* Barra de búsqueda */

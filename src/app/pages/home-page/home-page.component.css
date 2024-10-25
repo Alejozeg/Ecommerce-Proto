@@ -1,5 +1,7 @@
 #hero {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  /* background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); */
+  background: url("https://www.biowebcolsacor.online/wp-content/uploads/2024/10/slider.png") no-repeat center center;
+  background-size: cover;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -7,6 +9,7 @@
   text-align: center;
   color: white;
   animation: fadeIn 1.5s ease-in-out;
+  padding: 50px;
 }
 
 .hero-content h2 {
@@ -64,3 +67,20 @@
     transform: translateY(0);
   }
 }
+
+
+.container {
+justify-content: center;
+justify-items: center;
+padding: 20px;
+font-size: 2rem;
+color: #074A59;
+
+}
+
+.titlehome {
+color: #074A59;
+
+  
+}
+

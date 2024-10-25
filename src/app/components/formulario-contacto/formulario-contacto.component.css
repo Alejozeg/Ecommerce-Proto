@@ -14,7 +14,7 @@ color: #ffffff;
 h1 {
     text-align: center;
     color: #ffffff;
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 20px;
 }
 
@@ -63,7 +63,9 @@ button:hover {
 
 .form {
 justify-content: center;
-margin: 250px;
+margin-top: 50px;
+margin-left: 200px;
+margin-right: 200px;
 background-color:#074A59 ;
 color: aliceblue;
 border-radius: 20px;
@@ -71,7 +73,6 @@ border-radius: 20px;
 
 button {
     width: 50%; /* Ajusta el ancho del botón */
-    padding: 10px;
     background-color: #ffffff;
     color: #074A59;
     border: none;
