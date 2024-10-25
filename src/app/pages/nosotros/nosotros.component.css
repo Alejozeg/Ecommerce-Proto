@@ -3,21 +3,25 @@
     background-image: url('https://www.biowebcolsacor.online/wp-content/uploads/2024/10/Diseno-sin-titulo.jpg'); /* Cambia por la ruta de tu imagen de fondo */
     background-size: cover;
     background-position: center;
-    height: 400px; 
+    height: 600px; 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
+    background-color: #ffffff;
 }
 
 .banner-content {
     max-width: 600px;
 }
 
+
+
 .banner h1 {
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    color: #ffffff;
 }
 
 .banner p {
@@ -41,8 +45,10 @@
 .seccio2 {
     display: flex;
     justify-content: space-between;
-    margin: 0px 0; 
+    margin: 00px 0; 
     background-color: #ffffff;
+    padding: 0px;
+    gap: 20px;
 }
 
 .about-left {
@@ -56,6 +62,7 @@
     width: 600px; 
     height: 699px; 
     object-fit: cover; 
+    margin: 100px;
 }
 
 .about-right {
