@@ -1,0 +1,76 @@
+.paginadeproduto {
+    justify-items: center;
+gap: 50px;;
+margin: 10px;
+color: #ffffff;
+}
+
+.producttext {
+color: #ffffff;
+gap: 10px;
+}
+
+/* Sección 1: Banner */
+.paginadeproduto {
+display: flex;
+justify-items: center;
+justify-content: center;
+width: 600px;
+background-color: #074A59;
+padding: 30px;
+color: #f9f9f9;
+border-radius: 15px;
+}
+/* miniimagenes -->*/
+
+.miniimagenes {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 10px;
+
+}
+
+.miniimagenes img {
+width: 80px;
+justify-content: center;
+justify-items: center;
+border-radius: 15px;
+}
+
+.imagendestacada img{
+
+border-radius: 15px;
+
+
+}
+
+/* Sección 1: Banner */
+.banner {
+    background-image: url('https://www.biowebcolsacor.online/wp-content/uploads/2024/10/banner-page.png');
+    background-size: cover;
+    background-position: center;
+    height: 600px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #ffffff;
+}
+
+.banner-content {
+    max-width: 600px;
+    color: #f9f9f9;
+    margin-top: 20px;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+
+.banner p {
+    margin-bottom: 20px;
+}
