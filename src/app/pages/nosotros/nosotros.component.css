@@ -1,6 +1,6 @@
 /* Sección 1: Banner */
 .banner {
-    background-image: url('https://www.biowebcolsacor.online/wp-content/uploads/2024/10/banner-page.png'); /* Cambia por la ruta de tu imagen de fondo */
+    background-image: url('https://www.biowebcolsacor.online/wp-content/uploads/2024/10/banner-page.png');
     background-size: cover;
     background-position: center;
     height: 600px; 
@@ -14,40 +14,26 @@
 
 .banner-content {
     max-width: 600px;
+    color: #f9f9f9;
 }
-
-
 
 .banner h1 {
     font-size: 2.5em;
-    margin-bottom: 0px;
-    color: #ffffff;
+    margin-bottom: 10px;
+    color: aliceblue;
 }
 
 .banner p {
     margin-bottom: 20px;
 }
 
-.btn {
-    background-color: #007BFF; 
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none; 
-}
-
-.btn:hover {
-    background-color: #0056b3; 
-}
-
 /* Sección 2: */
 .seccio2 {
     display: flex;
     justify-content: space-between;
-    margin: 00px 0; 
+    margin: 20px 0; 
     background-color: #ffffff;
-    padding: 0px;
+    padding: 20px;
     gap: 20px;
 }
 
@@ -59,10 +45,9 @@
 }
 
 .about-left img {
-    width: 600px; 
-    height: 699px; 
+    width: 400px; 
+    height: 400px; 
     object-fit: cover; 
-    margin: 100px;
 }
 
 .about-right {
@@ -78,3 +63,62 @@
 .about-right p {
     line-height: 1.6; 
 }
+
+/* Sección 3: Video */
+.video-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.video-background {
+    max-width: 600%;
+    height: 600px;
+}
+
+
+.unetetext {
+
+color: #ffffff;
+
+
+}
+.cta {
+    background-color: #074A59; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center; /* Alinear el texto al centro */
+    padding: 50px 20px; /* Espaciado superior/inferior y lateral */
+    
+  }
+  
+  .cta-content {
+    max-width: 600px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido */
+    color: #ffffff;
+  }
+  
+  .cta h2 {
+    font-size: 2.5em; /* Tamaño de fuente del título */
+    margin-bottom: 20px; /* Espacio inferior del título */
+  }
+  
+  .cta p {
+    font-size: 1.2em; /* Tamaño de fuente del párrafo */
+    margin-bottom: 30px; /* Espacio inferior del párrafo */
+  }
+  
+  .btn-cta {
+    background-color: #ffffff; /* Color de fondo del botón */
+    color: #074A59; /* Color del texto del botón */
+    padding: 15px 30px; /* Espaciado del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1.2em; /* Tamaño de fuente del botón */
+    transition: background-color 0.3s ease; /* Transición suave para el fondo */
+  }
+  
+  .btn-cta:hover {
+    background-color: #FEB400; /* Color de fondo al pasar el mouse */
+    color: white; /* Color del texto al pasar el mouse */
+  }
