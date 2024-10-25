@@ -93,8 +93,10 @@ color: #FFFFFF;
 .titulofooter {
 background-color: #FFFFFF;
 border-radius: 15px;
-text-align: center;
 margin: 10px;
+padding-left: 20px ;
+padding-right:20px;
+
 
 }
 .enlaces{
@@ -132,4 +134,24 @@ color: #FFFFFF;
 color: #FFFFFF;
 
 }
+
+.appstore {
+
+  margin: 5px;
+  padding: 5px;
+
+
+}
+
+.googleplay {
+  margin: 5px;
+  padding: 5px;
+  }
+
+
+  .enlaces {
+text-align: left;
+
+
+  }
 

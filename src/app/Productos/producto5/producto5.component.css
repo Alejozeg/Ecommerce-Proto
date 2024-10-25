@@ -127,6 +127,8 @@ font-weight: normal; /* Hace el texto en negrita */
   font-size: 40px;
 }
 
+
+
 @media screen and  (max-width:800px) {
     .tarjetadetalleproducto {
 flex-direction: column;
@@ -160,6 +162,8 @@ select {
   font-weight: bold; /* Hace el texto en negrita */
 
 }
+
+
 
 select:focus {
   background-color: #074A59; /* Cambia el color del select al abrir */
