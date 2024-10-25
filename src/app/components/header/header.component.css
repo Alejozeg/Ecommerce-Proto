@@ -25,6 +25,7 @@ header .logo {
   font-size: 2em;
   font-weight: bold;
   color: #fff;
+  padding-left: 10px;
 }
 
 header nav ul {

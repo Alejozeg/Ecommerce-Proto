@@ -28,9 +28,8 @@
 .tarjetadetalleproducto {
   display: flex;
   background: #b8b7b73a;
-
   margin: 5px;
-  padding: 20px;
+  padding: 30px;
   color: #ffffff;
   max-width: 800px;
   margin: 0 auto;
@@ -41,8 +40,9 @@
 .cajaizquierda {
   display: flex;
   background: #074a59;
-  border-radius: 20px;
-  padding: 20px;
+  border-radius: 05px;
+  padding: 10px;
+  width: 410px;
 }
 
 /* cajaderecha */
@@ -51,12 +51,18 @@
   display: flex;
   flex-direction: column;
   margin-left: 20px;
-  gap: 20px;
+  gap: 18px;
 }
 .miniaturadetalleroducto {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  
+}
+
+.miniaturadetalleroducto img {
+width: 100px;
+
 }
 
 .imagendestacada {
@@ -64,6 +70,9 @@
   border-radius: 34px;
   margin-left: 10px;
   text-align: center;
+  width: 300px;
+
+
 }
 
 .btnseuircomprando {
@@ -105,6 +114,13 @@ button:hover {
 }
 .imagendestacada img {
   width: 100%;
+}
+
+.producttext {
+margin: 0;
+font-weight: normal; /* Hace el texto en negrita */
+
+
 }
 
 .producttext1 {
