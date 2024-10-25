@@ -1,10 +1,25 @@
+<!-- Barra de búsqueda -->
+<div class="search-bar">
+  <input type="text" placeholder="Encuentra tu prenda Busca Aquí" />
+  <button>Buscar</button>
+</div>
+
+<!-- Botones de filtro de categoría -->
+<div class="filter-buttons">
+  <button (click)="filtrarPorCategoria('Hombre')" class="active">Hombre</button>
+  <button (click)="filtrarPorCategoria('Mujer')">Mujer</button>
+</div>
+
+<!-- Productos -->
 <div class="galeria-productos">
   <div *ngFor="let producto of ProductosPorMostrar()" class="producto-card">
-    <!-- Usa 'producto.images[0]' para acceder a la primera imagen -->
-    <img (click)='DetailProduct(producto._id)' [src]="producto.images[0] || 'ruta/a/imagen_por_defecto.jpg'" alt="{{ producto.name }}">
+    <img *ngIf="producto.images && producto.images.length > 0" (click)='DetailProduct(producto._id)' [src]="producto.images[0]" alt="{{ producto.name }}">
     <h3>{{ producto.name }}</h3>
     <p>Precio: {{ producto.price | currency }}</p>
     <p>Categoría: {{ producto.category }}</p>
     <button (click)="addToCart(producto)">Añadir al carrito</button>
   </div>
 </div>
+
+<!-- Carrito de compras -->
+<app-carrito *ngIf="cartsProducts.length > 0" [cartsProducts]="cartsProducts"></app-carrito>
