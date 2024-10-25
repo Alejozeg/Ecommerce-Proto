@@ -13,6 +13,9 @@ export class ProductService {
 
   // Método para obtener la lista de productos desde la API
   list(): Observable<Product[]> {
-    return this.http.get<Product[]>("http://localhost:3000/api/products");  // Ajusta la URL de la API
+    return this.http.get<Product[]>("http://localhost:3001/api/products");  // Ajusta la URL de la API
+  }
+  getProductById(id:any): Observable<Product>{
+    return this.http.get<Product>("http://localhost:3001/api/product/" + id);
   }
 }

@@ -1,7 +1,7 @@
 <div class="galeria-productos">
   <div *ngFor="let producto of ProductosPorMostrar()" class="producto-card">
     <!-- Usa 'producto.images[0]' para acceder a la primera imagen -->
-    <img [src]="producto.images[0] || 'ruta/a/imagen_por_defecto.jpg'" alt="{{ producto.name }}">
+    <img (click)='DetailProduct(producto._id)' [src]="producto.images[0] || 'ruta/a/imagen_por_defecto.jpg'" alt="{{ producto.name }}">
     <h3>{{ producto.name }}</h3>
     <p>Precio: {{ producto.price | currency }}</p>
     <p>Categoría: {{ producto.category }}</p>

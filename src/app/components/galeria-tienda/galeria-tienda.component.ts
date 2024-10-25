@@ -2,6 +2,7 @@ import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductService } from '../../services/api.service';  // Asegúrate de importar el servicio correctamente
 import { Product } from '../../models/product.model';  // Ajusta la ruta del modelo
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-galeria-tienda',
@@ -18,7 +19,7 @@ export class GaleriaTiendaComponent {
   cartsProducts: any =[]
 
   private productService = inject(ProductService);  // Inyectar el servicio de productos
-
+  private router = inject(Router)
   ngOnInit() {
     this.productService.list().subscribe({
       next: (response: Product[]) => {
@@ -35,6 +36,10 @@ export class GaleriaTiendaComponent {
   filtrarPorCategoria(category: string) {
     const filtrado = this.productos().filter(producto => producto.category === category);
     this.ProductosPorMostrar.set(filtrado);  // Actualizar los productos filtrados
+  }
+
+  DetailProduct(id:any){
+    this.router.navigate(["Producto/" + id])
   }
 
   // Método para añadir productos al carrito
