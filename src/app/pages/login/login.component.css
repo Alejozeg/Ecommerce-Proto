@@ -1,0 +1,58 @@
+.login {
+    background-image: url('https://www.biowebcolsacor.online/wp-content/uploads/2024/10/4898876-scaled.jpg'); /* Añade la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    height: 100vh; /* Hace que ocupe el 100% de la altura de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    
+  .bienvenidoslogin {
+margin-bottom: 10px;
+padding: 20px;
+color: aliceblue;
+font: 2em sans-serif;
+text-align: center;
+  }
+
+
+    .tarjetalogin {
+        display: flex;
+    background-color: #074A59;
+    border-radius: 10px;
+    width: 600px;
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    
+    }
+    
+    .inputline {
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px    ;
+    border-radius: 15px;
+    rad
+    }
+    
+    
+    .button {
+    /* margin: 20px; */
+    align-self: center;
+    }
+    
+    input {
+        padding: 10px;
+        border-radius: 10px; /* Añade esquinas redondeadas */
+        border: 1px solid #ccc;
+        width: 100%;
+        box-sizing: border-box; /* Asegura que el padding se incluya dentro del ancho total */
+      }

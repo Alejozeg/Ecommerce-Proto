@@ -3,6 +3,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { TiendaComponent } from './pages/tienda/tienda.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { LoginComponent } from './pages/login/login.component';
 
 export const routes: Routes = [
   { path: '', component: HomePageComponent },  // Ruta principal
@@ -21,5 +22,10 @@ export const routes: Routes = [
     path: "contacto",
     component: ContactoComponent,
     title: "Contacto Neoclothes"
+  },
+  {
+    path: "login",
+    component: LoginComponent,
+    title: "login"
   }
 ];
