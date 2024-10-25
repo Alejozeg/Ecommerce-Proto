@@ -48,3 +48,12 @@ header nav ul li a:hover {
 
 
 }
+
+.logo a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Mantiene el color del texto */
+}
+
+.logo a:hover {
+  color: #FEB400; /* Cambia el color al pasar el mouse si lo deseas */
+}
