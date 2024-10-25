@@ -1,5 +1,5 @@
 footer {
-  background-color: #074A59;
+  background-color: #074A59074A59;
   color: #ffffff;
   text-align: center;
   padding: 30px 0;
@@ -29,7 +29,7 @@ footer {
 footer p {
   margin-top: 20px;
   font-size: 0.9rem;
-  color: #bbb;
+  color: #ffffff;
 }
 
 .container {
@@ -63,3 +63,73 @@ footer p {
       width: 30px; /* Cambia el tamaño para móviles */
   }
 }
+
+/* ================footer 2================== */
+
+
+a{
+  color: black;
+  
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+background-color: #074A59;
+padding: 40px;
+margin-top: 50px;
+}
+
+
+.footer1 {
+  display: flex;
+justify-content: space-between;
+margin-top: 00px;
+color: #FFFFFF;
+
+}
+
+
+.titulofooter {
+background-color: #FFFFFF;
+border-radius: 15px;
+text-align: center;
+margin: 10px;
+
+}
+.enlaces{
+display: flex;
+flex-direction: column;
+color: #FFFFFF;
+}
+
+
+.footer2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+  
+}
+
+
+
+
+.followu{
+color: antiquewhite;
+gap: 20px;
+
+}
+
+.linksfooter {
+color: #FFFFFF;
+
+
+
+}
+
+.derechosreservados {
+color: #FFFFFF;
+
+}
+
