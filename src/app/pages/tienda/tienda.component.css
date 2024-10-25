@@ -1,0 +1,42 @@
+/* Sección 1: Banner */
+.banner {
+    background-image: url('https://www.biowebcolsacor.online/wp-content/uploads/2024/10/banner-page.png'); /* Cambia por la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 600px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #ffffff;
+}
+
+.banner-content {
+    max-width: 600px;
+}
+
+
+
+.banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 0px;
+    color: #ffffff;
+}
+
+.banner p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #007BFF; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; 
+}
+
+.btn:hover {
+    background-color: #0056b3; 
+}

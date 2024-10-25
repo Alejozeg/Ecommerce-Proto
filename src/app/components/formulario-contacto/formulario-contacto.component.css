@@ -2,6 +2,8 @@
 
 .formulari-contacto {
     margin: 20px;
+color: #ffffff;
+    
 
 }
 :host {
@@ -11,8 +13,9 @@
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #ffffff;
     margin-top: 100px;
+    padding: 20px;
 }
 
 .form-group {
@@ -23,6 +26,7 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    
 }
 
 input[type="text"],
@@ -42,19 +46,43 @@ textarea {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #007BFF;
-    color: white;
+    background-color: #ffffff;
+    color: #074A59;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
+    margin: 20px;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #000000;
+    color: #ffffff;
+   
 }
 
 .form {
 justify-content: center;
 margin: 250px;
+background-color:#074A59 ;
+color: aliceblue;
+border-radius: 20px;
 }
+
+button {
+    width: 50%; /* Ajusta el ancho del botón */
+    padding: 10px;
+    background-color: #ffffff;
+    color: #074A59;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px ; /* 'auto' en los lados izquierdo y derecho lo centrará */
+  }
+
+  .fondoform {
+background-color: ;
+
+
+  }

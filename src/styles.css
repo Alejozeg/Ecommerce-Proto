@@ -1,15 +1,15 @@
 :root {
-  --primary-color: #ff3e6c;
-  --secondary-color: #3e9fff;
+  --primary-color: #07768f;
+  --secondary-color: #074A59;
   --light-bg: #f2f2f2;
   --text-color: #333;
-  --hover-shadow-color: #00ffcc;
+  --hover-shadow-color: #074A59;
   --font-family: 'Poppins', sans-serif;
 }
 
 body {
   font-family: var(--font-family);
-  background-color: var(--light-bg);
+  background-color: white;
   margin: 0;
   padding: 0;
   color: var(--text-color);
