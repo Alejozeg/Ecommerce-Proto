@@ -1,76 +1,151 @@
-.paginadeproduto {
-    justify-items: center;
-gap: 50px;;
-margin: 10px;
-color: #ffffff;
-}
-
-.producttext {
-color: #ffffff;
-gap: 10px;
-}
-
-/* Sección 1: Banner */
-.paginadeproduto {
-display: flex;
-justify-items: center;
-justify-content: center;
-width: 600px;
-background-color: #074A59;
-padding: 30px;
-color: #f9f9f9;
-border-radius: 15px;
-}
-/* miniimagenes -->*/
-
-.miniimagenes {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    gap: 10px;
-
-}
-
-.miniimagenes img {
-width: 80px;
-justify-content: center;
-justify-items: center;
-border-radius: 15px;
-}
-
-.imagendestacada img{
-
-border-radius: 15px;
-
-
-}
-
 /* Sección 1: Banner */
 .banner {
-    background-image: url('https://www.biowebcolsacor.online/wp-content/uploads/2024/10/banner-page.png');
-    background-size: cover;
-    background-position: center;
-    height: 600px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    background-color: #ffffff;
+  background-image: url("https://www.biowebcolsacor.online/wp-content/uploads/2024/10/banner-page.png");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-color: #ffffff;
 }
-
 .banner-content {
-    max-width: 600px;
-    color: #f9f9f9;
-    margin-top: 20px;
+  max-width: 600px;
+  color: #f9f9f9;
+  margin-top: 20px;
 }
-
 .banner h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    color: aliceblue;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: aliceblue;
+}
+/* cierre Sección 1: Banner */
+
+/* Sección 2: tarejeta */
+
+.tarjetadetalleproducto {
+  display: flex;
+  background: #b8b7b73a;
+
+  margin: 5px;
+  padding: 20px;
+  color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+/*caja izquierda*/
+
+.cajaizquierda {
+  display: flex;
+  background: #074a59;
+  border-radius: 20px;
+  padding: 20px;
 }
 
-.banner p {
-    margin-bottom: 20px;
+/* cajaderecha */
+
+.cajaderecha {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  gap: 20px;
+}
+.miniaturadetalleroducto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.imagendestacada {
+  background-color: #ffffff;
+  border-radius: 34px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.btnseuircomprando {
+  
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 0x;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;  transition: background-color 0.3s ease; /* Para una transición suave */
+
+}
+
+.btnseuircomprando:hover {
+  background-color: #074A59; /* Cambia el color de fondo en hover */
+  color: #fff; /* Puedes cambiar el color de texto si deseas */
+}
+
+
+
+button {
+  background-color: #FEB400;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.1);
+}
+
+.textoimagendestacada {
+  padding: 10px;
+}
+.imagendestacada img {
+  width: 100%;
+}
+
+.producttext1 {
+  font-size: 40px;
+}
+
+@media screen and  (max-width:800px) {
+    .tarjetadetalleproducto {
+flex-direction: column;
+
+    }
+    
+}
+
+
+/* Estilos del carrito */
+app-carrito {
+  position: fixed;
+  right: 20px;
+  top: 100px;
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+select {
+
+  background-color: #d8d8d8f1;
+  color: #074A59;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold; /* Hace el texto en negrita */
+
+}
+
+select:focus {
+  background-color: #074A59; /* Cambia el color del select al abrir */
+  color: #d8d8d8f1; /* Cambia el color del texto */
 }

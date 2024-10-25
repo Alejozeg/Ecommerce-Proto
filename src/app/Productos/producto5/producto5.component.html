@@ -1,37 +1,45 @@
 <section class="banner">
-    <div class="banner-content">
-                    <h1 class="producttext">{{data.name}}</h1>
+  <div class="banner-content">
+    <h1 class="producttext">{{ data.name }}</h1>
+  </div>
+</section>
+<section class="tarjetadetalleproducto">
+<!-- izquierda -->
+ <div class="cajaizquierda">
+  <div class="miniaturadetalleroducto">
+    @for(miniatura of data.images;track $index){
+    <img [src]="miniatura" alt="" />
+    }
+  </div>
+  <div class="imagendestacada">
+    <img [src]="data.images[0]" alt="" />
+    <div class="textoimagendestacada">
+    <h1 class="producttext">{{ data.name }}</h1>
+    <h3 class="producttext">Precio: {{ data.price }}</h3>
+    </div>
+  </div>
+  </div>
+<!-- derecha -->
+    <div class="cajaderecha">
+    <h1 class="producttext1">{{ data.name }}</h1>
+    <h3 class="producttext">{{ data.descripcion }}</h3>
+    <h3 class="producttext">Marca: {{ data.brand }}</h3>
+    <h3 class="producttext">Unidides Disponibles:{{ data.stock }}</h3>
+    <h3 class="producttext">Categoria:{{ data.category }}</h3>
 
-            </div>
-  </section>
-    <section class="paginadeproduto">
-        <!-- caja derecha -->
-                 <!-- miniimagenes -->
+    <select name="" id="">
+      <option value="">Talla: {{ data.size }}</option>
+    </select>
 
-        <div class="miniimagenes">
-            <!-- <h1 class="producttext">{{data.name}}</h1>
-            <img src="https://ngwww.biowebcolsacor.online/wp-content/uploads/2024/10/image-8.png" alt="">
-            <img src="https://www.biowebcolsacor.online/wp-content/uploads/2024/10/image-8.png" alt="">
-            <img src="https://www.biowebcolsacor.online/wp-content/uploads/2024/10/image-8.png" alt=""> --> 
-            <!-- <img>{{data.images}} -->
-                        </div>
-        <div class="imagendestacada">
-            <img src="https://www.biowebcolsacor.online/wp-content/uploads/2024/10/image-8.png" alt="">
-
-
-        </div>
-
-            <!-- caja izquierda  -->
-        <div>
-            <h1 class="producttext">{{data.name}}</h1>
-            <h1 class="producttext">Precio: {{data.price}}</h1>
-            <h1 class="producttext">{{data.descripcion}}</h1>
-            <h1 class="producttext">Talla: {{data.size}}</h1>
-            <h1 class="producttext">Marca: {{data.brand}}</h1>
-            <h1 class="producttext">Unidides Disponibles:{{data.stock}}</h1>
-            <h1 class="producttext">Categoria:{{data.category}}</h1>
-
-        </div>
-
+    <h3 class="producttext">$ {{ data.price }} COP</h3>
+    <button (click)="addToCart(data)">AÑADIR AL CARRITO</button>
+    <a href="http://localhost:4200/tienda">
+      <button class="btnseuircomprando">SEGUIR COMPRANDO</button>
+  </a>  </div>
     </section>
+    <!-- Carrito de compras -->
+     <div class="addToCartdetalleproducto">
+<app-carrito *ngIf="cartsProducts.length > 0" [cartsProducts]="cartsProducts"></app-carrito>
+
+     </div>
 
